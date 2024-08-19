@@ -6,147 +6,98 @@
     <title>Hassan Mohammed - Lead Software Engineer</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-            text-align: right;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        section {
-            padding: 20px;
-            margin: 20px 0;
-        }
-        .dark {
-            padding: 15px;
-            background: #333;
-            color: #fff;
-            margin-top: 10px;
-        }
-        footer {
-            padding: 20px;
-            margin-top: 20px;
-            color: #fff;
-            background-color: #333;
-            text-align: center;
-        }
-		
-		
-		body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
             background-color: #f4f4f4;
         }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }
-        .header {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
+        header {
+            background: #005f73;
             color: #fff;
+            padding: 20px 0;
+            text-align: center;
         }
-        .header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            object-fit: cover;
-        }
-        .header img:hover {
-            transform: scale(1.1);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-        }
-        .header h1 {
-            margin: 10px 0;
-        }
-        .header p {
-            font-size: 1.2em;
+        header h1 {
             margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
         }
-        .content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2em;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
             padding: 20px;
-            background-color: #fff;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .content .details {
-            max-width: 600px;
-        }
-        .content h2 {
+        section h2 {
             color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
+            border-bottom: 3px solid #005f73;
+            padding-bottom: 10px;
         }
-        .content p {
-            margin: 10px 0;
+        .profile-photo {
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
         }
-        .contact-info {
-            margin-top: 20px;
-        }
-        .contact-info a {
-            color: #1e90ff;
-            text-decoration: none;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-        .footer {
+        footer {
+            background: #005f73;
+            color: #fff;
             text-align: center;
             padding: 10px;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        .dark {
             background-color: #333;
             color: #fff;
-            margin-top: 20px;
+        }
+        .dark a {
+            color: #1e90ff;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            .profile-photo {
+                width: 100px;
+                height: 100px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <div id="branding">
-                <h1>Hassan Mohammed</h1>
-            </div>
+            <h2>Hassan Mohammed</h2>
             <nav>
                 <ul>
                     <li><a href="#about">About Me</a></li>
@@ -161,87 +112,145 @@
         </div>
     </header>
 
-    <section id="home">
-        <div class="container">
+    <div class="container">
+        <section id="home">
             <h2>Welcome to My Professional Portfolio</h2>
             <p>I'm a dynamic and results-driven Lead Software Engineer with extensive experience in designing, developing, and integrating sophisticated banking and payment systems.</p>
             <p><a href="https://www.linkedin.com/in/hassan-mohamed-15926646/" target="_blank">Connect with me on LinkedIn</a> | <a href="docs/Hassan_Resume.pdf" target="_blank">Download My Resume</a></p>
-        </div>
-    </section>
-<div class="container">
-    <h1>Hassan Mohammed</h1>
-    <img src="images/hassan.jpeg" alt="Hassan Mohammed" class="profile-photo" width="256" height="256">
-    <p>Lead Software Engineering</p>
-    <p>Email: hassanabuali19@gmail.com</p>
-    <p>Phone: +20-1550022439, WhatsApp +249-912390827</p>
-    <p>Residence: Hadaaek al-Ahram, Cairo, Egypt</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/hassan-mohamed-15926646/">https://www.linkedin.com/in/hassan-mohamed-15926646/</a></p>
-</div>
-    <section id="about" class="dark">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Dynamic and results-driven Lead Software Engineer with extensive experience in designing, developing, and integrating sophisticated banking and payment systems. Proven track record of leading cross-functional teams to deliver unified services and payment platforms, enhancing mobile and internet banking capabilities, and integrating third-party systems with banking services. Fluent in Arabic and English, with a residence in Cairo, Egypt.</p>
-            <p><strong>Languages:</strong> Arabic (Mother Tongue), English (Full Professional Proficiency)</p>
-            <p><strong>Contact:</strong> hassanabuali19@gmail.com | +20-1550022439 | WhatsApp: +249-912390827</p>
-            <p><strong>Residence:</strong> Hadaaek al-Ahram, Cairo, Egypt</p>
-        </div>
-    </section>
+        </section>
 
-    <section id="experience">
-        <div class="container">
+        <section id="about" class="dark">
+            <h2 style="color:orange;">About Me</h2>
+            <img src="images/hassan.jpeg" alt="Hassan Mohammed" class="profile-photo">
+            <p>Dynamic and results-driven Lead Software Engineer with extensive experience in designing, developing, and integrating sophisticated banking and payment systems. Proven track record of leading cross-functional teams to deliver unified services and payment platforms, enhancing mobile and internet banking capabilities, and integrating third-party systems with banking services. Fluent in Arabic and English, with a residence in Cairo, Egypt.</p>
+            <p><strong style="color:orange;">Languages:</strong> Arabic (Mother Tongue), English (Full Professional Proficiency)</p>
+            <p><strong style="color:orange;">Contact:</strong> hassanabuali19@gmail.com | +20-1552335071 | WhatsApp: +249-912390827</p>
+			<p><strong style="color:orange;">Nationality:</strong>Sudanese</p>
+            <p><strong style="color:orange;">Residence:</strong> Hadaaek al-Ahram, Cairo, Egypt</p>
+        </section>
+        <section id="experience">
             <h2>Experience</h2>
             <h3>Lead Software Engineer, Export Development Bank, Sudan (Dec 2020 – Present)</h3>
             <ul>
-                <li>Architected and led a team for designing and developing a unified services and payment platform (services and payment aggregator).</li>
-                <li>Integrated with Mobile banking and Internet banking.</li>
-                <li>Implemented machine learning models using Python to enhance fraud detection within mobile and internet banking platforms.</li>
-                <li>Led the team to integrate the service of the National Switch (Based on ISO-8583), using Java and Spring Boot framework.</li>
-            </ul>
-            <h3>Previous Roles</h3>
-            <ul>
-                <li>Lead API Integration Engineer and Senior Systems Developer, al Baraka Bank, Sudan (Oct 2017 – Dec 2020)</li>
-                <li>Freelance Payment Systems Developer, Sudan (Mar 2017 – Oct 2018)</li>
-                <li>IT Infrastructure and Systems Manager, Universal Hospital, Sudan (Feb 2016 – Feb 2017)</li>
-                <li>IT Officer, Khartoum College for Medical Sciences, Sudan (Mar 2014 – Feb 2016)</li>
-                <li>Senior Software Developer, LIN SCAN Advanced Pipeline & Tank Services, UAE (Jul 2012 – Apr 2013)</li>
-            </ul>
-        </div>
-    </section>
+               
+<li>Architected and led a team for designing and developing a unified services and payment platform (services and payment aggregator).</li>
+<li>Integrated with Mobile banking and Internet banking.</li>
+<li>Implemented machine learning models using Python to enhance fraud detection within mobile and internet banking platforms.</li>
+<li>Led the team to integrate the service of the National Switch (Based on ISO-8583), using Java and Spring Boot framework.</li>
+<li>Integrated third-party systems with banking services, including government sectors and universities for electronic payments, using Java and Spring Boot framework.</li>
+<li>Developed microservices using Java and Spring Boot for the payment platform, ensuring high performance and scalability.</li>
+<li>Provided essential core Project Management, team leading, and technical support to architects.</li>
+<li>Established and implemented best practices for a complete services aggregator integrated with Temenos (T24) Core-Banking System, maintaining standards, prescriptions, and fraud detection protocols.</li>
+<li>Developed applications that interface with RESTful services including Web service and liaised between managers and solution/architecture engineering, with a focus on securing data and preventing fraud.</li>
+<li>Provided technical support, supervision, and close follow-up for projects, ensuring the integration of fraud detection systems across all platforms.</li>
+<li>Enhanced system performance and security by optimizing code in Java and Spring Boot, with a focus on minimizing vulnerabilities and potential fraud risks.</li>
 
-    <section id="skills" class="dark">
-        <div class="container">
-            <h2>Skills</h2>
-            <h3>Technical Skills</h3>
-            <ul>
-                <li>Design Patterns, Object-Oriented Analysis and Design, RESTful API Design</li>
-                <li>High-Performance Tuning</li>
-                <li>Software Architecture, Service-Oriented Architecture (SOA)</li>
-                <li>Spring Boot, Microservices, Java, C#, Python</li>
-                <li>PostgreSQL, MySQL, SQL Server, Oracle</li>
-                <li>CI/CD, Git, Docker, Linux</li>
             </ul>
-            <h3>Soft Skills</h3>
-            <ul>
-                <li>Project Management</li>
-                <li>Technical Decision Making</li>
-                <li>Mentorship & Leadership</li>
-                <li>Cross-Team Collaboration</li>
-            </ul>
-        </div>
-    </section>
+			<h3>Lead Software Engineer, al Baraka Bank, Sudan, October 2017 – December 2020 </h3>
+<ul>
+<li>Planned, developed, built, and tested service and API integration services based on JSON objects and data-driven design.</li>
+<li>Developed SOAP and RESTful API webservices.</li>
+<li>Proficient in .NET WCF framework, Spring Boot framework, research, technical design specifications, and test scripts.</li>
+<li>Developed and maintained complex software applications supporting business units' functions and project management.</li>
+<li>Worked with SMPP protocol and SMS Gateway.</li>
+<li>Integrated the core-banking system with the bank portal (business workflow) </li>
+<li>Reduced SMS response time by 100 times through SMPP integration (transaction alert, customer's notifications, system alert).</li>
+<li>Integrated third-party systems with banking services, including government sectors, airlines companies, and universities for electronic payments.</li>
+<li>Integrated the backend of the mobile platform with core-banking.</li>
+</ul>
+ <h3>Previous Roles</h3>
+ <ul>
+<li>Freelance Payment Systems Developer, March, 2017 – Oct., 2018; Sudan</li>
+<li>IT Infrastructure and Systems Manager; Universal Hospital, Feb., 2016 – Feb., 2017, Sudan</li>
+<li>IT Officer; Khartoum College for Medical Sciences, March, 2014 – Feb., 2016; Sudan</li>
+<li>Senior Software Developer, LIN SCAN Advanced Pipeline & Tank Services, July, 2012 – April, 2013, UAE</li>
+<li>Software Developer; Meditech for Varieties System Co; July, 2011 – July, 2012, Sudan</li>
+<li>Senior Software Developer; Alforat Medical Company Ltd., Sudan April, 2008 – May, 2011</li>
+<li>Software Developer; Meditech for Varieties System Co., Sudan, May, 2003 – March, 2008</li>
+<li>Computer Center Coordinator; University of Khartoum – Medical & Health Sciences Campus, Sudan, Dec 1999 – April 2001</li>
+</ul>
 
-    <section id="education">
-        <div class="container">
+			
+			
+			
+			
+        </section>
+
+        <section id="skills" class="dark">
+            <h2 style="color:orange;">Skills</h2>
+             <h3>Hard Skills </h3>
+            <ul>
+			<h3>C Language</h3>
+<ul>
+  <li>Extensive experience in developing Point of Sale (POS) systems and implementing ISO-8583 financial protocol.</li>
+  <li>Proven ability to design and optimize low-level systems for performance and reliability.</li>
+</ul>
+
+<h3>C++</h3>
+<ul>
+  <li>Strong background in using C++ for various projects, including the Petrophysics project.</li>
+  <li>Skilled in object-oriented programming and leveraging advanced features to create robust and efficient applications.</li>
+</ul>
+
+<h3>Java and Spring Boot</h3>
+<ul>
+  <li>Proficient in developing robust applications with Java and Spring Boot, demonstrated in the Unified Service and Payment Platform (USPP).</li>
+  <li>Experienced in using JPA and Hibernate for efficient data persistence and management.</li>
+  <li>Skilled in PostgreSQL and MySQL for database design and management.</li>
+  <li>Adept at designing and consuming RESTful APIs for seamless integration between services.</li>
+  <li>Knowledgeable in RabbitMQ and ActiveMQ for effective message queuing and asynchronous communication.</li>
+</ul>
+
+<h3>C# and .NET</h3>
+<ul>
+  <li>Planned, developed, built, and tested service and API integration services using JSON objects and data-driven design.</li>
+  <li>Developed SOAP and RESTful API web services.</li>
+  <li>Proficient in .NET WCF framework, technical design specifications, and test scripts.</li>
+  <li>Created and maintained complex software applications supporting business functions and project management.</li>
+  <li>Worked with SMPP protocol and SMS Gateway, achieving a 100-fold reduction in SMS response time for transaction alerts and notifications.</li>
+  <li>Integrated core-banking systems with bank portals, third-party systems, and electronic payment solutions, including government sectors, airlines, and universities.</li>
+  <li>Integrated backend of mobile platforms with core-banking systems.</li>
+  <li>Led the design and implementation of the e-Integrated Medical Solution (eIMS), including the development of Electronic Health Record (EHR) and a comprehensive financial module.</li>
+</ul>
+
+<li>Design Patterns, Object-Oriented Analysis and Design</li>
+<li>Software Architecture, Service-Oriented Architecture (SOA), Legacy System Re-architecture</li>
+<li>Project Management, Software Development Processes</li>
+<li>Back-End Web Development, Web Services API</li>
+<li>Troubleshooting & Debugging, System Security & Threats</li>
+<li>Linux, Centos 7, MS-Windows</li>
+<li>Spring WS, Spring Rest, Microservices Spring Security, Spring Cloud ,Maven 3.0, Junit, Postman, Dockers, LINQ, Entity Framework,  Hibernate, RabbitMQ, ActiveMQ, Net Core, WCF, ASP.NET MVC, Web API, REST API</li>
+<li>Short Message Peer-to-Peer (SMPP), ISO 8583</li>
+
+<li>PostgreSQL, MySQL, SQL Server and Oracle</li>
+<li>CI/CD, Git</li>
+<li>Customer Requirements, Management Information Systems (MIS)</li>
+ </ul>
+<h3>Soft Skills </h3>
+<ul>
+<li>Highly competent in administrating and implementing different Software Projects, tasks, and activities</li>
+<li>High-quality Proposals and Reports Writing.</li>
+<li>High-Performance Tuning</li>
+<li>Mentorship & Leadership</li>
+<li>Technical Decision Making </li>
+<li>Cross-Team Collaboration</li>
+<li>Performance Benchmarking</li>
+<li>Capacity & Performance Planning</li>
+<li>Solving Problems with Creative and Critical Thinking</li>
+
+
+            </ul>
+        </section>
+
+        <section id="education">
             <h2>Education</h2>
             <ul>
                 <li>M.Sc. in Computer Sciences, University of Khartoum, Sudan, July 2003</li>
                 <li>B.Sc. in Mathematical Sciences, University of Khartoum, Sudan, September 1999</li>
             </ul>
-        </div>
-    </section>
+        </section>
 
-    <section id="certifications" class="dark">
-        <div class="container">
+        <section id="certifications">
             <h2>Certifications</h2>
             <ul>
                 <li><a href="https://coursera.org/verify/37C2JZSYWBCY" target="_blank">Solving Problems with Creative and Critical Thinking (IBM, 2024)</a></li>
@@ -249,22 +258,48 @@
                 <li><a href="https://coursera.org/verify/7X9G6Y999Q8J" target="_blank">FinTech and the Transformation in Financial Services (Copenhagen Business School, 2024)</a></li>
                 <li><a href="https://coursera.org/verify/GMNHBLTPSGTI" target="_blank">Digital Business Models (Lund University, 2024)</a></li>
             </ul>
-        </div>
-    </section>
+        </section>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <ul>
-                <li>Unified services and payment platform for Export Development Bank</li>
-                <li>Integration with the National Switch (ISO-8583) for al Baraka Bank</li>
-                <li>Development of Self-Service Kiosk applications for payment systems</li>
-            </ul>
-        </div>
-    </section>
+        <section id="projects">
+           
+          
+			<h2>Project Experience</h2>
 
-    <section id="contact">
-        <div class="container">
+<h4 style="background-color: gainsboro;">Unified Service and Payment Platform (USPP)</h4>
+
+<ul>
+  <li>Developed a comprehensive platform capable of handling pull, push, and restore requests between diverse services.</li>
+  <li>Ensured seamless integration across various technologies, programming languages, and databases.</li>
+</ul>
+<h4 style="background-color: gainsboro;">Payment Aggregator</h4>
+  <ul>
+   <li>Integration with the National Switch (ISO-8583) for al Baraka Bank</li>
+    </ul>
+<h4 style="background-color: gainsboro;">Self-Service Kiosk Payment System</h4>
+<ul>
+      <li>Developed a self-service kiosk application designed for payment systems, featuring both cash and debit card transaction capabilities.</li>
+</ul>
+<h4 style="background-color: gainsboro;">E-Lab</h4>
+
+<ul>
+  <li>Designed and implemented a system to support all areas of diagnostic laboratories, including Biochemistry, Haematology, and Microbiology.</li>
+</ul>
+
+<h4 style="background-color: gainsboro;">Clinical Management Information System</h4>
+
+<ul>
+  <li>Created a multi-module application for hospitals and clinics, managing medical, administrative, financial, and legal aspects.</li>
+</ul>
+
+<h4 style="background-color: gainsboro;">GeoPress (Petrophysics)</h4>
+
+<ul>
+  <li>Developed software to address gaps in reservoir characterization and wireline pressure evaluation, with a structured and objective-oriented approach.</li>
+</ul>
+
+        </section>
+
+        <section id="contact">
             <h2>Contact</h2>
             <p>If you'd like to get in touch, please use the contact form below:</p>
             <form action="mailto:hassanabuali19@gmail.com" method="post" enctype="text/plain">
@@ -276,8 +311,12 @@
                 <textarea id="message" name="message" rows="4" required></textarea><br><br>
                 <input type="submit" value="Send">
             </form>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <footer>
-        <
+         <footer>
+            <p>&copy; 2024 Hassan Mohammed. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
